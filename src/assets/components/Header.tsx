@@ -1,9 +1,7 @@
-
-
 function Header() {
   return (
     <header>
-      <h1>Mateo Franchesco</h1>
+      <h1>HEADER HECHO</h1>
     </header>
   );
 }

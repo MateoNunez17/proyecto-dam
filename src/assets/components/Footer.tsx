@@ -1,10 +1,7 @@
-
-
-
 function Footer() {
   return (
     <footer>
-      <p>&copy; 2026 Mateo Franchesco. RESERVADO</p>
+      <p>&copy; 2026 Mateo Franchesco. FOOTER HECHO</p>
     </footer>
   );
 }

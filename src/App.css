@@ -1,5 +1,3 @@
-/* src/App.css */
-
 .app-container {
   display: flex;
   flex-direction: column;
@@ -10,11 +8,11 @@
 header {
   padding: 20px;
   text-align: center;
-  background-color: #1e1e1e;
+  background-color: #efb107;
 }
 
 main {
-  flex: 1; 
+  flex: 1;
   padding: 20px;
   text-align: center;
 }
@@ -22,5 +20,24 @@ main {
 footer {
   padding: 20px;
   text-align: center;
+  background-color: #efb107;
+  margin-top: auto;
+}
+
+.card {
+  width: 350px;
+  margin: 20px auto;
+  padding: 20px;
   background-color: #1e1e1e;
+  border: 1px solid #c77c19;
+  border-radius: 10px;
+}
+
+.card h4 {
+  margin: 0 0 10px;
+  font-size: 22px;
+}
+
+.card p {
+  margin: 4px 0;
 }

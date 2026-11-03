@@ -1,10 +1,8 @@
-
-
 function Main() {
   return (
     <div>
       <main>
-        <p>Este es el contenido de mi primer ejercicio</p>
+        <p>MAIN HECHO - MATEO FRANCHESCO NUÑEZ MAYO</p>
       </main>
     </div>
   );
