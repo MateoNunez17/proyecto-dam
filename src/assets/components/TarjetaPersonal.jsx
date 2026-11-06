@@ -1,10 +1,7 @@
-interface Props {
-  nombre: string;
-  curso: string;
-  ciudad: string;
-}
 
-function TarjetaPersonal({ nombre, curso, ciudad }: Props) {
+
+
+function TarjetaPersonal({ nombre, curso, ciudad }) {
   return (
     <div className="card">
       <h4>{nombre}</h4>
@@ -15,3 +12,4 @@ function TarjetaPersonal({ nombre, curso, ciudad }: Props) {
 }
 
 export default TarjetaPersonal;
+
