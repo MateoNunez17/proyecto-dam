@@ -11,7 +11,7 @@ function App() {
       <Main />
 
       <Boton name="ACEPTAR"  />
-      <Boton name="CANCELAR" color="orange" />
+      <Boton name="CANCELAR" color="red" />
 
       <Footer />
     </div>
