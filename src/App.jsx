@@ -5,33 +5,35 @@ import Boton from "./assets/components/Boton";
 import TarjetaBienvenida from "./assets/components/TarjetaBienvenida";
 import Producto from "./assets/components/ProductoCard";
 import BarraProgreso from "./assets/components/BarraProgreso";
+import Alerta from "./assets/components/Alerta";
+
 function App() {
   return (
     <div className="app-container">
-    
-{/* header */}  
+      {/* header */}
       <Header />
 
-{/* tarjetas de bienvenida */}  
+      {/* tarjetas de bienvenida */}
       <TarjetaBienvenida usuario="Mateo" />
       <TarjetaBienvenida usuario="Franchesco" />
       <TarjetaBienvenida usuario="Tomy" />
-      
-{/* botones */}   
-      <Boton name="ACEPTAR"  />
-      <Boton name="CANCELAR" color="red" />
-      
-{/* productos */}
-      <div className="contenedor-horizontal">
-      <Producto nombre="Camiseta" precio={19.99} disponible={true} />
-      
-      <Producto nombre="Pantalón" precio={29.99} disponible={false} />
 
-      <Producto nombre="Zapatos" precio={49.99} disponible={true} />
+      {/* botones */}
+      <Boton name="ACEPTAR" />
+      <Boton name="CANCELAR" color="red" />
+
+      {/* productos */}
+      <h1 style={{ textAlign: "center" }}>Tarjeta de productos</h1>
+      <div className="contenedor-horizontal">
+        <Producto nombre="Camiseta" precio={19.99} disponible={true} />
+
+        <Producto nombre="Pantalón" precio={29.99} disponible={false} />
+
+        <Producto nombre="Zapatos" precio={49.99} disponible={true} />
       </div>
 
-{/* barras de progreso */}
-      <div style={{ textAlign: "center", padding: "20px" }}>
+      {/* barras de progreso */}
+      <div style={{ textAlign: "center", padding: "150px" }}>
         <h1>Barras de Progreso</h1>
 
         <p>Progreso al 35%:</p>
@@ -39,14 +41,31 @@ function App() {
 
         <p>Progreso al 50%:</p>
         <BarraProgreso porcentaje={50} />
-    </div>
+      </div>
 
-{/* footer */}      
+      {/* alerta */}
+      <div style={{ padding: "20px", maxWidth: "400px" }}>
+        <h2>Prueba de Alertas</h2>
+
+        <Alerta
+          texto="Este es un mensaje informativo."
+          tipo="info"
+          mostrarIcono={true}
+        />
+
+        <Alerta
+          texto="Ha ocurrido un error en el sistema."
+          tipo="error"
+          mostrarIcono={true}
+        />
+
+        <Alerta texto="¡Operación realizada con éxito!" tipo="exito" />
+      </div>
+
+      {/* footer */}
       <Footer />
     </div>
   );
 }
 
 export default App;
-
-
