@@ -12,6 +12,7 @@ header {
   background-color: #efb107;
 }
 
+
 main {
   flex: 1;
   padding: 20px;
@@ -63,4 +64,37 @@ footer {
   background-color: #1e1e1e;
   border: 1px solid #c77c19;
   border-radius: 10px;
+}
+
+.producto-card {
+
+  padding: 16px;
+  margin: 10px;
+  width: 220px;
+  background-color: #ffffff;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.producto-card h3 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  color: #333333;
+  font-size: 1.1rem;
+}
+
+.producto-card p {
+  margin: 6px 0;
+  font-size: 0.95rem;
+  color:#1e1e1e 
+}
+
+.contenedor-horizontal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; 
+  gap: 20px;      
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
