@@ -114,3 +114,11 @@ footer {
   width: 100%;
   padding: 20px;
 }
+
+.nombre-contenido {
+  text-align: center;
+}
+
+.tarjeta h1{
+  text-align: center;
+}

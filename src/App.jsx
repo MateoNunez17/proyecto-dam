@@ -7,19 +7,25 @@ import Producto from "./components/ProductoCard";
 import BarraProgreso from "./components/BarraProgreso";
 import Alerta from "./components/Alerta";
 import BotonAccion from "./components/BotonAccion";
+import Contenido from "./components/Contenido";
 
 function App() {
   return (
     <div className="app-container">
-      {/* header */}
       <Header />
+  
+      <div className="nombre-contenido">
+            <Contenido nombre="Mateo Franchesco" />
+      </div>
 
-      {/* tarjetas de bienvenida */}
+      <div className="tarjeta">
+        <h1>Tarjetas de bienvenida</h1>
       <TarjetaBienvenida usuario="Mateo" />
       <TarjetaBienvenida usuario="Franchesco" />
       <TarjetaBienvenida usuario="Tomy" />
+      </div> 
 
-      {/* botones */}
+      <h1 style={{ textAlign: "center", fontSize: 50 }}>Botones</h1>
       <Boton name="ACEPTAR" />
       <Boton name="CANCELAR" color="red" />
 
