@@ -1,12 +1,12 @@
 import "./App.css";
-import Header from "./assets/components/Header";
-import Footer from "./assets/components/Footer";
-import Boton from "./assets/components/Boton";
-import TarjetaBienvenida from "./assets/components/TarjetaBienvenida";
-import Producto from "./assets/components/ProductoCard";
-import BarraProgreso from "./assets/components/BarraProgreso";
-import Alerta from "./assets/components/Alerta";
-import BotonAccion from "./assets/components/BotonAccion";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Boton from "./components/Boton";
+import TarjetaBienvenida from "./components/TarjetaBienvenida";
+import Producto from "./components/ProductoCard";
+import BarraProgreso from "./components/BarraProgreso";
+import Alerta from "./components/Alerta";
+import BotonAccion from "./components/BotonAccion";
 
 function App() {
   return (
@@ -42,27 +42,25 @@ function App() {
       </div>
 
       {/* alerta */}
-      <div style={{ padding: "20px", maxWidth: "400px" }}>
+      <div className="alertas">
         <h2>Prueba de Alertas</h2>
 
         <Alerta
           texto="Este es un mensaje informativo."
           tipo="info"
-          mostrarIcono={true}/>
+          mostrarIcono={true} />
         <Alerta
           texto="Ha ocurrido un error en el sistema."
           tipo="error"
-          mostrarIcono={true}/>
-
+          mostrarIcono={true} />
         <Alerta texto="¡Operación realizada con éxito!" tipo="exito" />
       </div>
-        
-        {/* boton*/}
-        <div className="prueba-boton-accion">
-          <h2>Prueba de Boton de Accion</h2>
-        <BotonAccion texto="Prueba de Boton de Accion" color="yellow" />
-        </div>
 
+      {/* boton*/}
+      <div className="prueba-boton-accion">
+        <h2>Prueba de Boton de Accion</h2>
+        <BotonAccion texto="Prueba de Boton de Accion" color="yellow" />
+      </div>
 
       {/* footer */}
       <Footer />
