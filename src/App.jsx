@@ -6,6 +6,7 @@ import TarjetaBienvenida from "./assets/components/TarjetaBienvenida";
 import Producto from "./assets/components/ProductoCard";
 import BarraProgreso from "./assets/components/BarraProgreso";
 import Alerta from "./assets/components/Alerta";
+import BotonAccion from "./assets/components/BotonAccion";
 
 function App() {
   return (
@@ -26,9 +27,7 @@ function App() {
       <h1 style={{ textAlign: "center" }}>Tarjeta de productos</h1>
       <div className="contenedor-horizontal">
         <Producto nombre="Camiseta" precio={19.99} disponible={true} />
-
         <Producto nombre="Pantalón" precio={29.99} disponible={false} />
-
         <Producto nombre="Zapatos" precio={49.99} disponible={true} />
       </div>
 
@@ -38,7 +37,6 @@ function App() {
 
         <p>Progreso al 35%:</p>
         <BarraProgreso porcentaje={35} />
-
         <p>Progreso al 50%:</p>
         <BarraProgreso porcentaje={50} />
       </div>
@@ -50,17 +48,21 @@ function App() {
         <Alerta
           texto="Este es un mensaje informativo."
           tipo="info"
-          mostrarIcono={true}
-        />
-
+          mostrarIcono={true}/>
         <Alerta
           texto="Ha ocurrido un error en el sistema."
           tipo="error"
-          mostrarIcono={true}
-        />
+          mostrarIcono={true}/>
 
         <Alerta texto="¡Operación realizada con éxito!" tipo="exito" />
       </div>
+        
+        {/* boton*/}
+        <div className="prueba-boton-accion">
+          <h2>Prueba de Boton de Accion</h2>
+        <BotonAccion texto="Prueba de Boton de Accion" color="yellow" />
+        </div>
+
 
       {/* footer */}
       <Footer />

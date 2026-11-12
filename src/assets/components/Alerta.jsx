@@ -9,16 +9,8 @@ function Alerta({ texto, tipo = "info", mostrarIcono = false }) {
 
   return (
     <div
-      style={{
-        backgroundColor: actual.fondo,
-        color: "white",
-        padding: "12px 16px",
-        margin: "10px 0",
-        fontFamily: "system-ui, sans-serif",
-        display: "flex",
-        alignItems: "center",
-      }}
-    >
+      style={{ backgroundColor: actual.fondo, color: "white", padding: "12px 16px", margin: "10px 0", fontFamily: "system-ui, sans-serif",
+         display: "flex", alignItems: "center", }}>
       {mostrarIcono && (
         <span style={{ marginRight: "8px", fontSize: "1.2rem" }}>
           {actual.icono}
