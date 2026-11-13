@@ -8,6 +8,7 @@ import BarraProgreso from "./components/BarraProgreso";
 import Alerta from "./components/Alerta";
 import BotonAccion from "./components/BotonAccion";
 import Contenido from "./components/Contenido";
+import Tarjeta from "./components/Tarjeta";
 
 function App() {
   return (
@@ -66,6 +67,25 @@ function App() {
       <div className="prueba-boton-accion">
         <h2>Prueba de Boton de Accion</h2>
         <BotonAccion texto="Prueba de Boton de Accion" color="yellow" />
+      </div>
+
+
+      
+      <div className="contenedor-tarjetas">
+        <h1>Catálogo de Productos</h1>
+        <Tarjeta 
+          producto="Portátil" 
+          precio={349.99} 
+          cantidad={5} 
+          infoAdicional="Informacion adicional: 16GB RAM y 512GB SSD" 
+        />
+        
+        <Tarjeta 
+          producto="Ratón" 
+          precio={19.99} 
+          cantidad={12} 
+          infoAdicional="Informacion adicional: Inalambrico y ergonomico" 
+        />
       </div>
 
       {/* footer */}
