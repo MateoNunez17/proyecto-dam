@@ -127,3 +127,11 @@ footer {
   text-align: center;
   
 }
+
+.ejercicios {
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #1e1e1e;
+  border: 1px solid #c77c19;
+  border-radius: 10px;
+}

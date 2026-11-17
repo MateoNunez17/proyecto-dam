@@ -9,6 +9,9 @@ import Alerta from "./components/Alerta";
 import BotonAccion from "./components/BotonAccion";
 import Contenido from "./components/Contenido";
 import Tarjeta from "./components/Tarjeta";
+import Usuario from "./components/Usuario";
+import ProductoDescuento from "./components/ProductoDescuento";
+import Pedido from "./components/Pedido";
 
 function App() {
   return (
@@ -86,6 +89,16 @@ function App() {
           cantidad={12} 
           infoAdicional="Informacion adicional: Inalambrico y ergonomico" 
         />
+      </div>
+
+      <div className="ejercicios" style={{ textAlign: "center", padding: "50px"}}>
+
+      <ProductoDescuento nombre="Monitor" precio={200} descuento={10} />
+
+      <Usuario nombre="Mateo" rol="Administrador" />
+
+      <Pedido producto="Libro" cantidad={3} precio={20} />
+   
       </div>
 
       {/* footer */}
