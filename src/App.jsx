@@ -92,13 +92,9 @@ function App() {
       </div>
 
       <div className="ejercicios" style={{ textAlign: "center", padding: "50px"}}>
-
       <ProductoDescuento nombre="Monitor" precio={200} descuento={10} />
-
       <Usuario nombre="Mateo" rol="Administrador" />
-
       <Pedido producto="Libro" cantidad={3} precio={20} />
-   
       </div>
 
       {/* footer */}
